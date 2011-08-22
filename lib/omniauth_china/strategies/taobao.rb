@@ -9,8 +9,8 @@ module OmniAuth
     # basic user information.
     #
     # @example Basic Usage
-    # use OmniAuth::Strategies::TaoBao, 'client_id', 'client_secret'
-    class TaoBao < OmniAuth::Strategies::OAuth2
+    # use OmniAuth::Strategies::Taobao, 'client_id', 'client_secret'
+    class Taobao < OAuth2
       # @param [Rack Application] app standard middleware application parameter
       # @param [String] client_id the app key at taobao open platform
       # @param [String] client_secret  the app secret at taobao open platform
