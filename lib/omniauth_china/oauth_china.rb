@@ -9,5 +9,6 @@ module OmniAuth
     autoload :Tqq,                'omniauth_china/strategies/tqq'
     autoload :Renren,             'omniauth_china/strategies/renren'
     autoload :Qzone,              'omniauth_china/strategies/qzone'
+    autoload :Taobao,             'omniauth_china/strategies/taobao'
   end
 end
