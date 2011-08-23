@@ -18,7 +18,7 @@ module OmniAuth
 
       def initialize(app, client_id=nil, client_secret=nil, options={}, &block)
         client_options = {
-          :authorize_url => 'https://oauth.taobao.com/authorize?response_type=oauth_token',
+          :authorize_url => 'https://oauth.taobao.com/authorize?response_type=token',
           :token_url => 'https://oauth.taobao.com/token',
         }
         
