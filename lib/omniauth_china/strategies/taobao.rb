@@ -18,7 +18,7 @@ module OmniAuth
 
       def initialize(app, client_id=nil, client_secret=nil, options={}, &block)
         client_options = {
-          :authorize_url => 'https://oauth.taobao.com/authorize?response_type=token',
+          :authorize_url => 'https://oauth.taobao.com/authorize',
           :token_url => 'https://oauth.taobao.com/token',
         }
         
@@ -61,6 +61,7 @@ module OmniAuth
 
       def request_phase
         options[:state] ||= '1'
+        options[:response_type] ||= 'code'
         super
       end
 
