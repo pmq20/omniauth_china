@@ -21,6 +21,11 @@ module OmniAuth
           :authorize_url => 'https://oauth.taobao.com/authorize',
           :token_url => 'https://oauth.taobao.com/token',
         }
+        
+        options << {
+          :response_type => "code"
+        }
+        
         super(app, :taobao, client_id, client_secret, client_options, options, &block)
       end
 
