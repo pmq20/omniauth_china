@@ -22,9 +22,7 @@ module OmniAuth
           :token_url => 'https://oauth.taobao.com/token',
         }
         
-        options << {
-          :response_type => "code"
-        }
+        options[:response_type] = "code"
         
         super(app, :taobao, client_id, client_secret, client_options, options, &block)
       end
